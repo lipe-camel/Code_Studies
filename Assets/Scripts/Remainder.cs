@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Remainder : MonoBehaviour
 {
-    float time;
+    int time;
 
     void Update()
     {
-        time =  Mathf.Floor(Time.fixedTime);
-        float timeResult = time % 4;
+        time =  Mathf.FloorToInt(Time.fixedTime);
+        int timeResult = time % 4;
 
         if (timeResult == 3)
         {
